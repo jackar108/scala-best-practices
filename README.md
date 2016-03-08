@@ -9,8 +9,9 @@ A collection of best practices. Rules copies of what I elect to use..
 - [0. Preface](sections/0-preface.md)
   - [0.1 MUST NOT follow advice blindly](sections/0-preface.md#01-must-not-follow-advice-blindly)
   - All from here: http://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html
-  - Java rules applies if are not overrriden (Effective Jave ed.2)
+  - Formatting, most from here: http://docs.scala-lang.org/style/
   - TODO: http://twitter.github.io/effectivescala/
+  - Java rules applies if are not overrriden (Effective Jave ed.2)
 - [1. Hygienic Rules](sections/1-hygienic-rules.md)
   - [1.1. SHOULD enforce a reasonable line length](sections/1-hygienic-rules.md#11-should-enforce-a-reasonable-line-length)
   - [1.3. SHOULD break long functions](sections/1-hygienic-rules.md#13-should-break-long-functions)
@@ -28,6 +29,14 @@ A collection of best practices. Rules copies of what I elect to use..
   - [2.16. Public functions SHOULD have an explicit return type](sections/2-language-rules.md#216-public-functions-should-have-an-explicit-return-type)
   - [2.17. SHOULD NOT define case classes nested in other classes](sections/2-language-rules.md#217-should-not-define-case-classes-nested-in-other-classes)
   - [2.18. MUST NOT include classes, traits and objects inside package objects](sections/2-language-rules.md#218-must-not-include-classes-traits-and-objects-inside-package-objects)
+- From twitter in particular:
+  - Use active names for operations with side effects; user.activate() not user.setActive() 
+  - Use descriptive names for methods that return values
+      src.isDefined not src.defined
+    Don't prefix getters with get
+      As per the previous rule, it's redundant: site.count not site.getCount
+  - braces not for single oneliners: http://twitter.github.io/effectivescala/#Formatting-Braces
+  - Variance is difficult but needed: http://twitter.github.io/effectivescala/#Types%20and%20Generics-Variance
 
 - [3. Application Architecture](sections/3-architecture.md)
   - [3.1. SHOULD NOT use the Cake pattern](sections/3-architecture.md#31-should-not-use-the-cake-pattern)
