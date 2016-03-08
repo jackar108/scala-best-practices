@@ -43,12 +43,13 @@ A collection of best practices. Rules copies of what I elect to use..
   - braces not for single oneliners: http://twitter.github.io/effectivescala/#Formatting-Braces
   - Variance is difficult but needed: http://twitter.github.io/effectivescala/#Types%20and%20Generics-Variance
   - type alias: http://twitter.github.io/effectivescala/#Types%20and%20Generics-Type%20aliases
+  - use java converters instead of conversions: http://twitter.github.io/effectivescala/#Collections-Java%20Collections
   - Use the mutable namespace explicitly. Don’t import scala.collection.mutable._ and refer to Set, instead
 ```scala
 import scala.collection.mutable
 val set = mutable.Set()
 ```
-  - use java converters instead of conversions: http://twitter.github.io/effectivescala/#Collections-Java%20Collections
+
 
 
 
