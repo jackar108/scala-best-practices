@@ -29,6 +29,11 @@ A collection of best practices. Rules copies of what I elect to use..
   - [2.16. Public functions SHOULD have an explicit return type](sections/2-language-rules.md#216-public-functions-should-have-an-explicit-return-type)
   - [2.17. SHOULD NOT define case classes nested in other classes](sections/2-language-rules.md#217-should-not-define-case-classes-nested-in-other-classes)
   - [2.18. MUST NOT include classes, traits and objects inside package objects](sections/2-language-rules.md#218-must-not-include-classes-traits-and-objects-inside-package-objects)
+- [3. Application Architecture](sections/3-architecture.md)
+  - [3.1. SHOULD NOT use the Cake pattern](sections/3-architecture.md#31-should-not-use-the-cake-pattern)
+  - [3.2. MUST NOT put things in Play's Global](sections/3-architecture.md#32-must-not-put-things-in-plays-global)
+  - [3.4. SHOULD be mindful of the garbage collector](sections/3-architecture.md#34-should-be-mindful-of-the-garbage-collector)
+  - [3.5. MUST NOT use parameterless ConfigFactory.load() or access a Config object directly](sections/3-architecture.md#35-must-not-use-parameterless-configfactoryload-or-access-a-config-object-directly)
 - From twitter in particular:
   - Use active names for operations with side effects; user.activate() not user.setActive() 
   - Use descriptive names for methods that return values
@@ -37,13 +42,7 @@ A collection of best practices. Rules copies of what I elect to use..
       As per the previous rule, it's redundant: site.count not site.getCount
   - braces not for single oneliners: http://twitter.github.io/effectivescala/#Formatting-Braces
   - Variance is difficult but needed: http://twitter.github.io/effectivescala/#Types%20and%20Generics-Variance
-
-- [3. Application Architecture](sections/3-architecture.md)
-  - [3.1. SHOULD NOT use the Cake pattern](sections/3-architecture.md#31-should-not-use-the-cake-pattern)
-  - [3.2. MUST NOT put things in Play's Global](sections/3-architecture.md#32-must-not-put-things-in-plays-global)
-  - [3.4. SHOULD be mindful of the garbage collector](sections/3-architecture.md#34-should-be-mindful-of-the-garbage-collector)
-  - [3.5. MUST NOT use parameterless ConfigFactory.load() or access a Config object directly](sections/3-architecture.md#35-must-not-use-parameterless-configfactoryload-or-access-a-config-object-directly)
-
+  - type alias: http://twitter.github.io/effectivescala/#Types%20and%20Generics-Type%20aliases
 
 
 
