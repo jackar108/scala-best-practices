@@ -9,6 +9,8 @@ A collection of best practices. Rules copies of what I elect to use..
 - [0. Preface](sections/0-preface.md)
   - [0.1 MUST NOT follow advice blindly](sections/0-preface.md#01-must-not-follow-advice-blindly)
   - All from here: http://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html
+  - Java rules applies if are not overrriden (Effective Jave ed.2)
+  - TODO: http://twitter.github.io/effectivescala/
 - [1. Hygienic Rules](sections/1-hygienic-rules.md)
   - [1.1. SHOULD enforce a reasonable line length](sections/1-hygienic-rules.md#11-should-enforce-a-reasonable-line-length)
   - [1.3. SHOULD break long functions](sections/1-hygienic-rules.md#13-should-break-long-functions)
@@ -19,15 +21,10 @@ A collection of best practices. Rules copies of what I elect to use..
   - [2.3. SHOULD NOT update a "var" using loops or conditions](sections/2-language-rules.md#23-should-not-update-a-var-using-loops-or-conditions)
   - [2.5. MUST NOT use "var" inside a case class](sections/2-language-rules.md#25-must-not-use-var-inside-a-case-class)
   - [2.6. SHOULD NOT declare abstract "var" members](sections/2-language-rules.md#26-should-not-declare-abstract-var-members)
-  - [2.7. MUST NOT throw exceptions for validations of user input or flow control](sections/2-language-rules.md#27-must-not-throw-exceptions-for-validations-of-user-input-or-flow-control)
-  - [2.8. MUST NOT catch Throwable](sections/2-language-rules.md#28-must-not-catch-throwable-when-catching-exceptions)
-  - [2.9. MUST NOT use "null"](sections/2-language-rules.md#29-must-not-use-null)
-  - [2.10. MUST NOT use "Option.get"](sections/2-language-rules.md#210-must-not-use-optionget)
-  - [2.11. MUST NOT use Java's Date or Calendar, instead use Joda-Time or JSR-310](sections/2-language-rules.md#211-must-not-use-javas-date-or-calendar-instead-use-joda-time-or-jsr-310)
+  - ??? [2.7. MUST NOT throw exceptions for validations of user input or flow control](sections/2-language-rules.md#27-must-not-throw-exceptions-for-validations-of-user-input-or-flow-control)
+  - Unless in tests [2.9. MUST NOT use "null"](sections/2-language-rules.md#29-must-not-use-null)
   - [2.12. SHOULD NOT use Any or AnyRef or isInstanceOf / asInstanceOf](sections/2-language-rules.md#212-should-not-use-any-or-anyref-or-isinstanceof--asinstanceof)
   - [2.13. MUST serialize dates as either Unix Timestamp or ISO 8601](sections/2-language-rules.md#213-must-serialize-dates-as-either-unix-timestamp-or-as-iso-8601)
-  - [2.14. MUST NOT use magic values](sections/2-language-rules.md#214-must-not-use-magic-values)
-  - [2.15. SHOULD NOT use "var" as shared state](sections/2-language-rules.md#215-should-not-use-var-as-shared-state)
   - [2.16. Public functions SHOULD have an explicit return type](sections/2-language-rules.md#216-public-functions-should-have-an-explicit-return-type)
   - [2.17. SHOULD NOT define case classes nested in other classes](sections/2-language-rules.md#217-should-not-define-case-classes-nested-in-other-classes)
   - [2.18. MUST NOT include classes, traits and objects inside package objects](sections/2-language-rules.md#218-must-not-include-classes-traits-and-objects-inside-package-objects)
@@ -35,9 +32,13 @@ A collection of best practices. Rules copies of what I elect to use..
 - [3. Application Architecture](sections/3-architecture.md)
   - [3.1. SHOULD NOT use the Cake pattern](sections/3-architecture.md#31-should-not-use-the-cake-pattern)
   - [3.2. MUST NOT put things in Play's Global](sections/3-architecture.md#32-must-not-put-things-in-plays-global)
-  - [3.3. SHOULD NOT apply optimizations without profiling](sections/3-architecture.md#33-should-not-apply-optimizations-without-profiling)
   - [3.4. SHOULD be mindful of the garbage collector](sections/3-architecture.md#34-should-be-mindful-of-the-garbage-collector)
   - [3.5. MUST NOT use parameterless ConfigFactory.load() or access a Config object directly](sections/3-architecture.md#35-must-not-use-parameterless-configfactoryload-or-access-a-config-object-directly)
+
+
+
+
+TODO:
 
 - [4. Concurrency and Parallelism](sections/4-concurrency-parallelism.md)
   - [4.1. SHOULD avoid concurrency like the plague it is](sections/4-concurrency-parallelism.md#41-should-avoid-concurrency-like-the-plague-it-is)
