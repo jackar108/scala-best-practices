@@ -35,14 +35,20 @@ A collection of best practices. Rules copies of what I elect to use..
   - [3.4. SHOULD be mindful of the garbage collector](sections/3-architecture.md#34-should-be-mindful-of-the-garbage-collector)
   - [3.5. MUST NOT use parameterless ConfigFactory.load() or access a Config object directly](sections/3-architecture.md#35-must-not-use-parameterless-configfactoryload-or-access-a-config-object-directly)
 - From twitter in particular:
-  - Use active names for operations with side effects; user.activate() not user.setActive() 
+  - Use active names for operations with side effects; `user.activate()` not `user.setActive()` 
   - Use descriptive names for methods that return values
-      src.isDefined not src.defined
+      `src.isDefined` not `src.defined`
     Don't prefix getters with get
-      As per the previous rule, it's redundant: site.count not site.getCount
+      As per the previous rule, it's redundant: `site.count` not `site.getCount`
   - braces not for single oneliners: http://twitter.github.io/effectivescala/#Formatting-Braces
   - Variance is difficult but needed: http://twitter.github.io/effectivescala/#Types%20and%20Generics-Variance
   - type alias: http://twitter.github.io/effectivescala/#Types%20and%20Generics-Type%20aliases
+  - Use the mutable namespace explicitly. Don’t import scala.collection.mutable._ and refer to Set, instead
+```scala
+import scala.collection.mutable
+val set = mutable.Set()
+```
+  - use java converters instead of conversions: http://twitter.github.io/effectivescala/#Collections-Java%20Collections
 
 
 
