@@ -8,19 +8,15 @@ A collection of best practices. Rules copies of what I elect to use..
 
 - [0. Preface](sections/0-preface.md)
   - [0.1 MUST NOT follow advice blindly](sections/0-preface.md#01-must-not-follow-advice-blindly)
-
+  - All from here: http://www.lihaoyi.com/post/StrategicScalaStylePrincipleofLeastPower.html
 - [1. Hygienic Rules](sections/1-hygienic-rules.md)
   - [1.1. SHOULD enforce a reasonable line length](sections/1-hygienic-rules.md#11-should-enforce-a-reasonable-line-length)
-  - [1.2. MUST NOT rely on a SBT or IDE plugin to do the formatting for you](sections/1-hygienic-rules.md#12-must-not-rely-on-a-sbt-or-ide-plugin-to-do-the-formatting-for-you)
   - [1.3. SHOULD break long functions](sections/1-hygienic-rules.md#13-should-break-long-functions)
   - [1.4. MUST NOT introduce spelling errors in names and comments](sections/1-hygienic-rules.md#14-must-not-introduce-spelling-errors-in-names-and-comments)
-  - [1.5. Names MUST be meaningful](sections/1-hygienic-rules.md#15-names-must-be-meaningful)
 
 - [2. Language Rules](sections/2-language-rules.md)
   - [2.1. MUST NOT use "return"](sections/2-language-rules.md#21-must-not-use-return)
-  - [2.2. SHOULD use immutable data structures](sections/2-language-rules.md#22-should-use-immutable-data-structures)
   - [2.3. SHOULD NOT update a "var" using loops or conditions](sections/2-language-rules.md#23-should-not-update-a-var-using-loops-or-conditions)
-  - [2.4. SHOULD NOT define useless traits](sections/2-language-rules.md#24-should-not-define-useless-traits)
   - [2.5. MUST NOT use "var" inside a case class](sections/2-language-rules.md#25-must-not-use-var-inside-a-case-class)
   - [2.6. SHOULD NOT declare abstract "var" members](sections/2-language-rules.md#26-should-not-declare-abstract-var-members)
   - [2.7. MUST NOT throw exceptions for validations of user input or flow control](sections/2-language-rules.md#27-must-not-throw-exceptions-for-validations-of-user-input-or-flow-control)
